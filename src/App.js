@@ -7,6 +7,7 @@ export default function App() {
   const [activeTab, setActiveTab] = useState("fulltime");
   const [expandedEntries, setExpandedEntries] = useState({});
   const [showScrollUp, setShowScrollUp] = useState(false);
+  const [showProjectDetails, setShowProjectDetails] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -237,15 +238,28 @@ export default function App() {
               <div className="project-meta">
                 <h4 className="project-title">Bubbly Laundry Stop</h4>
               </div>
-              <div className="project-Image">
-                <img src={dataEntryImg} alt="Data Entry Project" className="project-thumbnail" />
+              {!showProjectDetails ? (
+              <div className="project-content">
+                <div className="project-Image">
+                  <img src={dataEntryImg} alt="Data Entry Project" className="project-thumbnail" />
+                </div>
+                <div className="tech-view">
+                  <button className="tab-button" onClick={() => setShowProjectDetails(true)}>View Details...</button>
+                </div>
               </div>
-              <div className="project-description">
-                A full-featured web-based application built with Laravel, PHP, and MySQL, designed to streamline and digitalize laundry shop operations. It allows staff to manage orders, assign services, track customer laundry status, and generate receipts seamlessly. The system supports role-based access (Admin, Staff, and Customer), provides status monitoring, and delivers a responsive UI for desktop views.
+              ) : (
+              <div className="project-details">
+                <div className="project-description">
+                  A full-featured web-based application built with Laravel, PHP, and MySQL, designed to streamline and digitalize laundry shop operations. It allows staff to manage orders, assign services, track customer laundry status, and generate receipts seamlessly. The system supports role-based access (Admin, Staff, and Customer), provides status monitoring, and delivers a responsive UI for desktop views.
+                </div>
+                <div className="tech-details-back">
+                  <button className="tab-button" onClick={() => setShowProjectDetails(false)}>Back</button>
+                </div>
+                <div className="tech-tags">
+                  <span>Laravel</span><span>PHP</span><span>MySQL</span>
+                </div>
               </div>
-              <div className="tech-tags">
-                <span>Laravel</span><span>PHP</span><span>MySQL</span>
-              </div>
+              )}
             </div>
           </section>
         </div>
