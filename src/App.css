@@ -490,4 +490,9 @@ body {
     margin-bottom: 2rem;
   }
     
+  .top-button {
+    padding: 0.5rem 1rem;
+    width: 180px;
+    margin-right: 1rem;
+  }
 }
