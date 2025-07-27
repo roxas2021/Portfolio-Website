@@ -200,7 +200,7 @@ body.light-mode .tech-tags span {
   padding: 1rem;
   background-color: #112240;
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(2, 12, 27, 0.2);
+  box-shadow: 0 2px 10px rgba(252, 253, 255, 0.377);
 }
 
 .job-meta {
@@ -254,33 +254,62 @@ body.light-mode .tech-tags span {
   line-height: 1.6;
 }
 
+.tab-buttons{
+  margin-bottom: 25px;
+}
+
+  .tab-button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #e7f1ff;
+    background-color: white;
+    color: #233554;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 1rem;
+  }
+
+  .tab-button:hover {
+    background-color: #e7f1ff;
+  }
+
+  .tab-button.active {
+    background-color: #233554;
+    color: white;
+  }
+
+
 /* Responsive design */
 @media (max-width: 768px) {
   .app-container {
     flex-direction: column;
     height: auto;
-    overflow-x: hidden;
   }
 
  .sidebar {
     width: 100%;
-    position: relative;  /* turns off sticky */
-    height: auto;         /* lets it grow naturally with content */
-    align-items: center;  /* optional: center the content */
+    position: relative;
+    height: auto;
+    align-items: center;
   }
 
   .main-content {
     width: 100% !important;
-    padding: 1.5rem;
-    padding-left: 0;
+    height: auto;
+  }
+
+  .main-content-context {
+    max-width: 100%;
+    padding: 0;
   }
 
   .sidebar-content {
-    width: 100%; /* or 100% with internal padding */
+    width: 100%;
     padding-top: 0;
   }
 
   .sidebar-nav ul {
     padding-left: 0;
   }
+  
 }
