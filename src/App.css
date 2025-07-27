@@ -355,10 +355,11 @@ body {
     position: relative;
     height: auto;
     align-items: center;
+    padding-top: 3rem;
   }
     
   #about p {
-    font-size: 0.8rem;
+    font-size: 0.82rem;
   }
 
   .main-content {
