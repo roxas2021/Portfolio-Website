@@ -96,7 +96,7 @@ export default function App() {
                 <div className="job-entry">
                   <div className="job-meta">
                     <span className="job-date">Oct 2023 — Present 1yr 10 mos</span>
-                    <h3 className="job-company">Octal Philippines Incorporated</h3>
+                    <h3 className="job-company">Octal Philippines Inc.</h3>
                     <h4 className="job-title">Software Developer</h4>
                   </div>
                   <ul className="job-bullets">
