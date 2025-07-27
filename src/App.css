@@ -271,6 +271,7 @@ body.light-mode .tech-tags span {
 
   .tab-button:hover {
     background-color: #e7f1ff;
+    box-shadow: 0 2px 10px rgba(252, 253, 255, 0.377);
   }
 
   .tab-button.active {
@@ -287,6 +288,10 @@ body.light-mode .tech-tags span {
   .app-container {
     flex-direction: column;
     height: auto;
+  }
+
+  .section {
+    padding-top: 1rem;
   }
 
  .sidebar {

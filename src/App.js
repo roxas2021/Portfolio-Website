@@ -62,7 +62,7 @@ export default function App() {
           <section id="about" className="section">
             <h3>About</h3>
             <p>
-              I'm a Software developer passionate about committed to crafting clean, efficient
+              Hi, I'm a Software developer passionate about committed to crafting clean, efficient
               code that drives innovation. With a
               curious mind and a love for problem solving, I thrive on the challenges that
               programming presents.
@@ -169,23 +169,46 @@ export default function App() {
               )}
 
               {activeTab === "freelance" && (
-                <div className="job-entry">
-                  <div className="job-meta">
-                    <span className="job-date">Ongoing</span>
-                    <h3 className="job-company">Freelance Projects</h3>
-                    <h4 className="job-title">Freelance Developer</h4>
-                  </div>
-                  <div className="job-content">
-                    <ul className="job-bullets">
-                      <li>Building websites and dashboards for clients using modern frontend technologies.</li>
-                      <li>Collaborating with remote teams and using Git for version control and delivery.</li>
-                      <li>Working on cross-platform responsive layouts, integrations, and bug fixes.</li>
-                    </ul>
-                  </div>
-                  <div className="tech-tags">
-                    <span>React</span><span>JavaScript</span><span>Node.js</span><span>GitHub</span>
-                  </div>
+                <>
+                  <div className="job-entry">
+                    <div className="job-meta">
+                      <span className="job-date">Feb 2025 - Present 5 mos</span>
+                      <h3 className="job-company">PPSTA</h3>
+                      <h4 className="job-title">Software Developer</h4>
+                    </div>
+                    <div className="job-content">
+                      <ul className="job-bullets">
+                        <li>Full stack developer of the new implemented system.</li>
+                        <li>Designed and developed, system applications using Cake PHP, delivering reliable and scalable solutions.</li>
+                        <li>Redesign UI of web applications delivering reliable and scalable solutions.</li>
+                      </ul>
+                    </div>
+                    <div className="tech-tags">
+                      <span>Cake PHP</span><span>MySQL</span><span>Github</span>
+                    </div>
                 </div>
+
+                  <div
+                    className={`job-entry ${!expandedEntries[2] ? "collapsed" : ""}`}
+                    onClick={() => toggleEntry(2)}>
+                    <div className="job-meta">
+                      <span className="job-date">Nov 2022 - Feb 2023 4 mos</span>
+                      <h3 className="job-company">TeQnovation PEC Inc.</h3>
+                      <h4 className="job-title">Software Developer</h4>
+                    </div>
+                    <div className="job-content">
+                      <ul className="job-bullets">
+                        <li>Analyzed and resolved issues by engaging with applications, systems, and databases, utilizing SQL and Microsoft SQL Server to diagnose problems and implement effective fixes.</li>
+                        <li>Proposed and communicated innovative technical ideas to the team, contributing to the development of solutions that addressed complex system challenges.</li>
+                        <li>Developed and implemented both temporary workarounds and permanent fixes, ensuring minimal disruption and improved system performance.</li>
+                        <li>Designed, developed, and deployed system applications using C# and Visual Basic .NET (VB.NET), delivering reliable and scalable solutions.</li>
+                      </ul>
+                    </div>
+                    <div className="tech-tags">
+                      <span>C#</span><span>MSSQL</span><span>Visual Basic .Net</span>
+                    </div>
+                </div>
+                </>
               )}
           </section>
 
