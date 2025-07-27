@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.cd5160db.css",
-    "main.js": "/portfolio/static/js/main.91c5bc2b.js",
+    "main.css": "/portfolio/static/css/main.0b54ca95.css",
+    "main.js": "/portfolio/static/js/main.2d8a6ef8.js",
     "static/js/453.a5b25d5b.chunk.js": "/portfolio/static/js/453.a5b25d5b.chunk.js",
+    "static/media/LaundryStop.png": "/portfolio/static/media/LaundryStop.6701dbbdd200810651a0.png",
     "index.html": "/portfolio/index.html",
-    "main.cd5160db.css.map": "/portfolio/static/css/main.cd5160db.css.map",
-    "main.91c5bc2b.js.map": "/portfolio/static/js/main.91c5bc2b.js.map",
+    "main.0b54ca95.css.map": "/portfolio/static/css/main.0b54ca95.css.map",
+    "main.2d8a6ef8.js.map": "/portfolio/static/js/main.2d8a6ef8.js.map",
     "453.a5b25d5b.chunk.js.map": "/portfolio/static/js/453.a5b25d5b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd5160db.css",
-    "static/js/main.91c5bc2b.js"
+    "static/css/main.0b54ca95.css",
+    "static/js/main.2d8a6ef8.js"
   ]
 }
