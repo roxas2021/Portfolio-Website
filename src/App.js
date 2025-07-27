@@ -1,10 +1,29 @@
 import { useEffect, useState } from "react";
+import dataEntryImg from "./images/LaundryStop.png";
 import "./App.css";
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(true);
   const [activeTab, setActiveTab] = useState("fulltime");
   const [expandedEntries, setExpandedEntries] = useState({});
+  const [showScrollUp, setShowScrollUp] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sidebar = document.querySelector(".sidebar");
+      const sidebarHeight = sidebar?.offsetHeight || 0;
+      const isMobile = window.innerWidth <= 768;
+
+      if (isMobile && window.scrollY > sidebarHeight) {
+        setShowScrollUp(true);
+      } else {
+        setShowScrollUp(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleEntry = (index) => {
     setExpandedEntries((prev) => ({
@@ -213,10 +232,29 @@ export default function App() {
           </section>
 
           <section id="projects" className="section">
-            <h2>Projects</h2>
-            <p>Project showcase coming soon...</p>
+            <h3>Projects</h3>
+            <div className="project-entry">
+              <div className="project-meta">
+                <h4 className="project-title">Bubbly Laundry Stop</h4>
+              </div>
+              <div className="project-Image">
+                <img src={dataEntryImg} alt="Data Entry Project" className="project-thumbnail" />
+              </div>
+              <div className="project-description">
+                A full-featured web-based application built with Laravel, PHP, and MySQL, designed to streamline and digitalize laundry shop operations. It allows staff to manage orders, assign services, track customer laundry status, and generate receipts seamlessly. The system supports role-based access (Admin, Staff, and Customer), provides status monitoring, and delivers a responsive UI for desktop views.
+              </div>
+              <div className="tech-tags">
+                <span>Laravel</span><span>PHP</span><span>MySQL</span>
+              </div>
+            </div>
           </section>
         </div>
+
+        {showScrollUp && (
+          <div className="scroll-button-up">
+            <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>⬆</button>
+          </div>
+        )}
       </main>
     </div>
   );
