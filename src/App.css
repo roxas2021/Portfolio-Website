@@ -278,6 +278,9 @@ body.light-mode .tech-tags span {
     color: white;
   }
 
+.experience-header {
+  position: static;
+}
 
 /* Responsive design */
 @media (max-width: 768px) {
@@ -312,4 +315,57 @@ body.light-mode .tech-tags span {
     padding-left: 0;
   }
   
+  .experience-header {
+    position: sticky;
+    top: 0;
+    background-color: var(--background-color); /* Match your theme */
+    z-index: 999;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .job-content {
+    font-size: 0.8rem;
+    height: auto;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .job-entry.collapsed .job-content {
+    height: 230px;
+    overflow: hidden;
+  }
+
+  .job-entry {
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  .job-entry.collapsed {
+    max-height: 500px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .job-entry.collapsed::after {
+    content: "Tap to read more";
+    display: block;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+    padding: 0.5rem;
+    background: linear-gradient(to top, #0a0a0a, transparent);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .job-entry:not(.collapsed) {
+    max-height: 1000px;
+  }
+
+  .tech-tags {
+    min-height: 2rem;
+  }
 }
