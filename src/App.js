@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import dataEntryImg from "./images/LaundryStop.png";
 import "./App.css";
+import "./App-DarkMode.css";
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -61,7 +62,8 @@ export default function App() {
         <div className="sidebar-content">
           <h1 className="name">Ferdinand Roxas</h1>
           <p className="title">Software Developer</p>
-          <p className="tagline">Building user-first, scalable software for the modern web.</p>
+          <p className="tagline">Building user-first, scalable software for the modern web, windows form and mobile app.</p>
+          <button className="top-button">Download Resume</button>
           <nav className="sidebar-nav">
             <ul>
               <li><a href="#about">ABOUT</a></li>
