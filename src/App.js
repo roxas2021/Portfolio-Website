@@ -104,7 +104,7 @@ export default function App() {
                 <h4 className="job-title">Software Developer</h4>
               </div>
               <ul className="job-bullets">
-                <li>Collaborated with application, system, and database owners to diagnose issues, identify root causes, and implement effective solutions, ensuring system stability and performance.</li>
+                <li>Collaborated with application system, and database owners to diagnose issues, identify root causes, and implement effective solutions, ensuring system stability and performance.</li>
                 <li>Proposed and communicated innovative technical ideas to the team, contributing to the resolution of complex issues and improving overall system efficiency.</li>
                 <li>Developed and implemented both temporary workarounds and permanent fixes to address critical system challenges, minimizing downtime and enhancing user experience.</li>
                 <li>Designed, developed, and deployed system applications using ASP.NET Core, ASP.NET MVC, C#, HTML, jQuery, and AJAX, ensuring seamless functionality and scalability.</li>
