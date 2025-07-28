@@ -1,21 +1,24 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.87c62b0a.css",
-    "main.js": "/portfolio/static/js/main.c372f201.js",
+    "main.js": "/portfolio/static/js/main.b91167b3.js",
     "static/js/453.a5b25d5b.chunk.js": "/portfolio/static/js/453.a5b25d5b.chunk.js",
     "static/media/backgroundimg.png": "/portfolio/static/media/backgroundimg.9687090d45c51cd6f47d.png",
     "static/media/InventorySystem.png": "/portfolio/static/media/InventorySystem.37417c6fd3d1a0d453e1.png",
     "static/media/hrmoprifiling.png": "/portfolio/static/media/hrmoprifiling.c1827e4371f509905b1a.png",
     "static/media/Eccdis.png": "/portfolio/static/media/Eccdis.b73e9e0544998b035c73.png",
     "static/media/LaundryStop.png": "/portfolio/static/media/LaundryStop.6701dbbdd200810651a0.png",
+    "static/media/zendtask.jpg": "/portfolio/static/media/zendtask.03729d109b1142e4f58a.jpg",
     "static/media/LibrarySystem.png": "/portfolio/static/media/LibrarySystem.6394eec7be61f1b986b2.png",
+    "static/media/garneyapp.jpg": "/portfolio/static/media/garneyapp.f945c69630588a207b7e.jpg",
+    "static/media/garney.jpg": "/portfolio/static/media/garney.513f68b031c9cc5007cc.jpg",
     "index.html": "/portfolio/index.html",
     "main.87c62b0a.css.map": "/portfolio/static/css/main.87c62b0a.css.map",
-    "main.c372f201.js.map": "/portfolio/static/js/main.c372f201.js.map",
+    "main.b91167b3.js.map": "/portfolio/static/js/main.b91167b3.js.map",
     "453.a5b25d5b.chunk.js.map": "/portfolio/static/js/453.a5b25d5b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.87c62b0a.css",
-    "static/js/main.c372f201.js"
+    "static/js/main.b91167b3.js"
   ]
 }
