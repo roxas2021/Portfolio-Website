@@ -219,7 +219,7 @@ export default function App() {
                 <>
                   <div className="job-entry">
                     <div className="job-meta">
-                      <span className="job-date">Jul 2025 - May 2025 11 mos</span>
+                      <span className="job-date">Jan 2025 - June 2025 6 mos</span>
                       <h3 className="job-company">PPSTA</h3>
                       <h4 className="job-title">Software Developer</h4>
                     </div>
