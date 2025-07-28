@@ -4,6 +4,7 @@ import ProjectCardMobile from "./ProjectCardMobile";
 import ProjectCardDesktop from "./ProjectCardDesktop";
 import "../ProjectCard.css";
 import dataEntryImg from "../images/LaundryStop.png";
+import ProjectCardUIUX from "./ProjectCardUIUX";
 
 const ProjectSection = () => {
     const [activeTab, setActiveTab] = useState("webapp");
@@ -51,7 +52,7 @@ const ProjectSection = () => {
             )}
 
             {activeTab === "uidesign" && (
-                <ProjectCardDesktop />
+                <ProjectCardUIUX />
             )}
         </section>
     )
