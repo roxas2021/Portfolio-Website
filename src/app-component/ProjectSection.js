@@ -12,7 +12,8 @@ const ProjectSection = () => {
         <section id="projects" className="section">
             <h3 style={{ color: "#ccd6f6", marginBottom: "1rem" }}>Projects</h3>
             
-             <div className="experience-header animate__animated animate__fadeIn">
+             <div className="experience-header animate__animated animate__fadeIn"
+                    style={{ animationDuration: "1.8s" }}>
                 <div className="tab-buttons">
                   <button
                     onClick={() => setActiveTab("webapp")}

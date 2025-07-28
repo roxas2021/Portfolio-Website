@@ -126,7 +126,7 @@ export default function App() {
 
       <main className="main-content">
         <div className="main-content-context">
-          <section id="about" className="section animate__animated animate__slideInRight">
+          <section id="about" className="section animate__animated animate__slideInRight" style={{ animationDuration: "1.8s" }}>
             <h3>About Me</h3>
             <p>
               Hi, I'm a Software developer passionate about committed to crafting clean, efficient
@@ -154,7 +154,7 @@ export default function App() {
           </section>
 
           <section id="experience" className="section">
-             <div className="experience-header animate__animated animate__fadeIn">
+             <div className="experience-header animate__animated animate__fadeIn" style={{ animationDuration: "1.8s" }}>
                 <h3>Experience</h3>
                 <div className="tab-buttons">
                   <button
@@ -176,7 +176,8 @@ export default function App() {
                 <>
                   <div
                     className={`job-entry animate-on-scroll ${!expandedEntries[0] ? "collapsed" : ""}`}
-                    onClick={() => toggleEntry(0)}>
+                    onClick={() => toggleEntry(0)}
+                    style={{ animationDuration: "1.8s" }}>
                     <div className="job-meta">
                       <span className="job-date">Oct 2023 — Present 1yr 10 mos</span>
                       <h3 className="job-company">Octal Philippines Incorporated</h3>
@@ -197,7 +198,8 @@ export default function App() {
 
                   <div
                     className={`job-entry animate-on-scroll ${!expandedEntries[1] ? "collapsed" : ""}`}
-                    onClick={() => toggleEntry(1)}>
+                    onClick={() => toggleEntry(1)}
+                    style={{ animationDuration: "1.8s" }}>
                     <div className="job-meta">
                       <span className="job-date">Jun 2022 — Oct 2023 1 yr 5 mos</span>
                       <h3 className="job-company">Symon Systems And Allied Services Inc.</h3>
@@ -217,7 +219,8 @@ export default function App() {
                     </div>
                   </div>
 
-                  <div className="job-entry animate-on-scroll">
+                  <div className="job-entry animate-on-scroll"
+                    style={{ animationDuration: "1.8s" }}>
                     <div className="job-meta">
                       <span className="job-date">Sep 2019 — Jun 2022 2 yrs 10 mos</span>
                       <h3 className="job-company">CONDUENT - Data Processing</h3>
@@ -237,7 +240,8 @@ export default function App() {
 
               {activeTab === "freelance" && (
                 <>
-                  <div className="job-entry animate-on-scroll">
+                  <div className="job-entry animate-on-scroll"
+                    style={{ animationDuration: "1.8s" }}>
                     <div className="job-meta">
                       <span className="job-date">Jan 2025 - June 2025 6 mos</span>
                       <h3 className="job-company">PPSTA</h3>
@@ -257,7 +261,8 @@ export default function App() {
 
                   <div
                     className={`job-entry animate-on-scroll ${!expandedEntries[2] ? "collapsed" : ""}`}
-                    onClick={() => toggleEntry(2)}>
+                    onClick={() => toggleEntry(2)}
+                    style={{ animationDuration: "1.8s" }}>
                     <div className="job-meta">
                       <span className="job-date">Nov 2022 - Feb 2023 4 mos</span>
                       <h3 className="job-company">TeQnovation PEC Inc.</h3>
