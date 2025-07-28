@@ -80,7 +80,7 @@ export default function App() {
           <h1 className="name">Ferdinand Roxas</h1>
           <p className="title">Software Developer</p>
           <p className="tagline">Building user-first, scalable software for the modern web, windows form and mobile app.</p>
-          <a href="/resume.pdf" download>
+          <a href="/portfolio/resume.pdf" download>
             <button className="top-button">Download Resume</button>
           </a>
           <nav className="sidebar-nav">
