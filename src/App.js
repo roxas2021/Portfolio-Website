@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import ProjectSection from "./app-component/ProjectSection";
 import "./App.css";
 import "./App-DarkMode.css";
+import "animate.css";
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -66,6 +67,25 @@ export default function App() {
     document.body.className = darkMode ? "dark-mode" : "light-mode";
   }, [darkMode]);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate__animated", "animate__slideInUp");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    const targets = document.querySelectorAll(".animate-on-scroll");
+    targets.forEach((target) => observer.observe(target));
+
+    return () => targets.forEach((target) => observer.unobserve(target));
+  }, [activeTab]);
+
   return (
     <div className="app-container">
       {/* <button 
@@ -77,13 +97,13 @@ export default function App() {
 
       <aside className="sidebar">
         <div className="sidebar-content">
-          <h1 className="name">Ferdinand Roxas</h1>
-          <p className="title">Software Developer</p>
-          <p className="tagline">Building user-first, scalable software for the modern web, windows form and mobile app.</p>
+          <h1 className="name animate__animated animate__slideInLeft">Ferdinand Roxas</h1>
+          <p className="title animate__animated animate__slideInLeft">Software Developer</p>
+          <p className="tagline animate__animated animate__slideInLeft">Building user-first, scalable software for the modern web, windows form and mobile app.</p>
           <a href={`${process.env.PUBLIC_URL}/resume.pdf`} download>
-            <button className="top-button">Download Resume</button>
+            <button className="top-button animate__animated animate__fadeIn">Download Resume</button>
           </a>
-          <nav className="sidebar-nav">
+          <nav className="sidebar-nav animate__animated animate__fadeIn">
             <ul>
               <li><a href="#about">ABOUT</a></li>
               <li><a href="#experience">EXPERIENCE</a></li>
@@ -95,7 +115,7 @@ export default function App() {
               </li>
             </ul>
           </nav>
-          <div className="social-icons">
+          <div className="social-icons animate__animated animate__fadeIn">
             <a href="https://www.facebook.com/roxas2000/" target="_blank"><i className="fab fa-facebook"></i></a>
             <a href="https://www.linkedin.com/in/ferdinand-roxas-768a96155/" target="_blank"><i className="fab fa-linkedin"></i></a>
             <a href="https://github.com/roxas2021" target="_blank"><i className="fab fa-github"></i></a>
@@ -106,7 +126,7 @@ export default function App() {
 
       <main className="main-content">
         <div className="main-content-context">
-          <section id="about" className="section">
+          <section id="about" className="section animate__animated animate__slideInRight">
             <h3>About Me</h3>
             <p>
               Hi, I'm a Software developer passionate about committed to crafting clean, efficient
@@ -134,7 +154,7 @@ export default function App() {
           </section>
 
           <section id="experience" className="section">
-             <div className="experience-header">
+             <div className="experience-header animate__animated animate__fadeIn">
                 <h3>Experience</h3>
                 <div className="tab-buttons">
                   <button
@@ -155,7 +175,7 @@ export default function App() {
               {activeTab === "fulltime" && (
                 <>
                   <div
-                    className={`job-entry ${!expandedEntries[0] ? "collapsed" : ""}`}
+                    className={`job-entry animate-on-scroll ${!expandedEntries[0] ? "collapsed" : ""}`}
                     onClick={() => toggleEntry(0)}>
                     <div className="job-meta">
                       <span className="job-date">Oct 2023 — Present 1yr 10 mos</span>
@@ -176,7 +196,7 @@ export default function App() {
                   </div>
 
                   <div
-                    className={`job-entry ${!expandedEntries[1] ? "collapsed" : ""}`}
+                    className={`job-entry animate-on-scroll ${!expandedEntries[1] ? "collapsed" : ""}`}
                     onClick={() => toggleEntry(1)}>
                     <div className="job-meta">
                       <span className="job-date">Jun 2022 — Oct 2023 1 yr 5 mos</span>
@@ -197,7 +217,7 @@ export default function App() {
                     </div>
                   </div>
 
-                  <div className="job-entry">
+                  <div className="job-entry animate-on-scroll">
                     <div className="job-meta">
                       <span className="job-date">Sep 2019 — Jun 2022 2 yrs 10 mos</span>
                       <h3 className="job-company">CONDUENT - Data Processing</h3>
@@ -217,7 +237,7 @@ export default function App() {
 
               {activeTab === "freelance" && (
                 <>
-                  <div className="job-entry">
+                  <div className="job-entry animate-on-scroll">
                     <div className="job-meta">
                       <span className="job-date">Jan 2025 - June 2025 6 mos</span>
                       <h3 className="job-company">PPSTA</h3>
@@ -236,7 +256,7 @@ export default function App() {
                 </div>
 
                   <div
-                    className={`job-entry ${!expandedEntries[2] ? "collapsed" : ""}`}
+                    className={`job-entry animate-on-scroll ${!expandedEntries[2] ? "collapsed" : ""}`}
                     onClick={() => toggleEntry(2)}>
                     <div className="job-meta">
                       <span className="job-date">Nov 2022 - Feb 2023 4 mos</span>

@@ -25,9 +25,28 @@ const ProjectCard = () => {
       return () => cards.forEach((card) => observer.unobserve(card));
     }, []);
 
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animate__animated", "animate__slideInUp");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      const targets = document.querySelectorAll(".animate-on-scroll");
+      targets.forEach((target) => observer.observe(target));
+
+      return () => targets.forEach((target) => observer.unobserve(target));
+    }, []);
+
   return (
     <div className="project-list">
-      <div className="project-card">
+      <div className="project-card animate-on-scroll">
         <div className="project-image">
           <img src={dataEntryImg} alt="Bubbly Laundry Stop" />
         </div>
@@ -57,7 +76,7 @@ const ProjectCard = () => {
         </div>
       </div>
 
-      <div className="project-card">
+      <div className="project-card animate-on-scroll">
         <div className="project-image">
           <img src={dataLibraryImg} alt="Library Management System" />
         </div>
@@ -85,7 +104,7 @@ const ProjectCard = () => {
         </div>
       </div>
 
-      <div className="project-card">
+      <div className="project-card animate-on-scroll">
         <div className="project-image">
           <img src={dataEccdisImg} alt="Childhood And Information System" />
         </div>
@@ -113,7 +132,7 @@ const ProjectCard = () => {
         </div>
       </div>
 
-      <div className="project-card">
+      <div className="project-card animate-on-scroll">
         <div className="project-image">
           <img src={dataIMSImg} alt="Inventory Management System" />
         </div>
@@ -141,7 +160,7 @@ const ProjectCard = () => {
         </div>
       </div>
 
-      <div className="project-card">
+      <div className="project-card animate-on-scroll">
         <div className="project-image">
           <img src={dataHrmoprofilingImg} alt="HRMO Profiling" />
         </div>
