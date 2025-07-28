@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.2b5d123d.css",
-    "main.js": "/portfolio/static/js/main.22f3513a.js",
+    "main.css": "/portfolio/static/css/main.87c62b0a.css",
+    "main.js": "/portfolio/static/js/main.8ebf2bd1.js",
     "static/js/453.a5b25d5b.chunk.js": "/portfolio/static/js/453.a5b25d5b.chunk.js",
     "static/media/backgroundimg.png": "/portfolio/static/media/backgroundimg.9687090d45c51cd6f47d.png",
     "static/media/InventorySystem.png": "/portfolio/static/media/InventorySystem.37417c6fd3d1a0d453e1.png",
@@ -10,12 +10,12 @@
     "static/media/LaundryStop.png": "/portfolio/static/media/LaundryStop.6701dbbdd200810651a0.png",
     "static/media/LibrarySystem.png": "/portfolio/static/media/LibrarySystem.6394eec7be61f1b986b2.png",
     "index.html": "/portfolio/index.html",
-    "main.2b5d123d.css.map": "/portfolio/static/css/main.2b5d123d.css.map",
-    "main.22f3513a.js.map": "/portfolio/static/js/main.22f3513a.js.map",
+    "main.87c62b0a.css.map": "/portfolio/static/css/main.87c62b0a.css.map",
+    "main.8ebf2bd1.js.map": "/portfolio/static/js/main.8ebf2bd1.js.map",
     "453.a5b25d5b.chunk.js.map": "/portfolio/static/js/453.a5b25d5b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b5d123d.css",
-    "static/js/main.22f3513a.js"
+    "static/css/main.87c62b0a.css",
+    "static/js/main.8ebf2bd1.js"
   ]
 }
