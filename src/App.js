@@ -68,12 +68,12 @@ export default function App() {
 
   return (
     <div className="app-container">
-      <button 
+      {/* <button 
         className="theme-toggle"
         onClick={() => setDarkMode((prev) => !prev)}
         aria-label = "Toggle dark/light mode"
       > {darkMode ? "🌞" : "🌙"}
-      </button>
+      </button> */}
 
       <aside className="sidebar">
         <div className="sidebar-content">
