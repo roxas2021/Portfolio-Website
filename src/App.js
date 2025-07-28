@@ -9,6 +9,7 @@ export default function App() {
   const [expandedEntries, setExpandedEntries] = useState({});
   const [showScrollUp, setShowScrollUp] = useState(false);
   const [showProjectDetails, setShowProjectDetails] = useState(false);
+  const [showContactsModal, setShowContactsModal] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -79,18 +80,26 @@ export default function App() {
           <h1 className="name">Ferdinand Roxas</h1>
           <p className="title">Software Developer</p>
           <p className="tagline">Building user-first, scalable software for the modern web, windows form and mobile app.</p>
-          <button className="top-button">Download Resume</button>
+          <a href="/resume.pdf" download>
+            <button className="top-button">Download Resume</button>
+          </a>
           <nav className="sidebar-nav">
             <ul>
               <li><a href="#about">ABOUT</a></li>
               <li><a href="#experience">EXPERIENCE</a></li>
               <li><a href="#projects">PROJECTS</a></li>
+              <li><a href="#" onClick={(e) => {
+                      e.preventDefault();
+                      setShowContactsModal(true);
+                    }}>CONTACTS</a>
+              </li>
             </ul>
           </nav>
           <div className="social-icons">
-            <a href="#"><i className="fab fa-github"></i></a>
-            <a href="#"><i className="fab fa-linkedin"></i></a>
-            <a href="#"><i className="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/roxas2000/" target="_blank"><i className="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/ferdinand-roxas-768a96155/" target="_blank"><i className="fab fa-linkedin"></i></a>
+            <a href="https://github.com/roxas2021" target="_blank"><i className="fab fa-github"></i></a>
+            <a href="https://www.behance.net/roxasfredz" target="_blank"><i className="fab fa-behance"></i></a>
           </div>
         </div>
       </aside>
@@ -98,7 +107,7 @@ export default function App() {
       <main className="main-content">
         <div className="main-content-context">
           <section id="about" className="section">
-            <h3>About</h3>
+            <h3>About Me</h3>
             <p>
               Hi, I'm a Software developer passionate about committed to crafting clean, efficient
               code that drives innovation. With a
@@ -259,6 +268,42 @@ export default function App() {
           </div>
         )}
       </main>
+      
+      {/* Pop-up Modal for Contacts */}
+      {showContactsModal && (
+        <div className="modal-overlay" onClick={() => setShowContactsModal(false)}>
+          <div className="modal" onClick={(e) => e.stopPropagation()}>
+            <div className="modal-entry">
+              <h3>Contact Information</h3>
+              <p className="modal-subtext">Here are the ways you can reach me</p>
+
+              <div className="contact-item">
+                <i className="fas fa-envelope"></i>
+                <div>
+                  <strong>Email</strong>
+                  <p>roxasfredinz@gmail.com</p>
+                </div>
+              </div>
+
+              <div className="contact-item">
+                <i className="fas fa-phone-alt"></i>
+                <div>
+                  <strong>Phone</strong>
+                  <p>+63 991 218 2877</p>
+                </div>
+              </div>
+
+              <div className="contact-item">
+                <i className="fas fa-map-marker-alt"></i>
+                <div>
+                  <strong>Location</strong>
+                  <p>Hindang Leyte, Philippines</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
