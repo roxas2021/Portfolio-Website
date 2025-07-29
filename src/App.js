@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ProjectSection from "./app-component/ProjectSection";
+import ChatBox from "./app-component/ChatBox";
 import "./App.css";
 import "./App-DarkMode.css";
 import "animate.css";
@@ -100,7 +101,7 @@ export default function App() {
           <h1 className="name animate__animated animate__slideInLeft">Ferdinand Roxas</h1>
           <p className="title animate__animated animate__slideInLeft">Software Developer</p>
           <p className="tagline animate__animated animate__slideInLeft">Building user-first, scalable software for the modern web, windows form and mobile app.</p>
-          <a href={`${process.env.PUBLIC_URL}/resume.pdf`} download>
+          <a href={`${process.env.PUBLIC_URL}/FerdinandRoxas.pdf`} download>
             <button className="top-button animate__animated animate__fadeIn">Download Resume</button>
           </a>
           <nav className="sidebar-nav animate__animated animate__fadeIn">
@@ -293,6 +294,8 @@ export default function App() {
           </div>
         )}
       </main>
+
+        <ChatBox />
       
       {/* Pop-up Modal for Contacts */}
       {showContactsModal && (
