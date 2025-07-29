@@ -102,7 +102,7 @@ export default function App() {
           <p className="title animate__animated animate__slideInLeft">Software Developer</p>
           <p className="tagline animate__animated animate__slideInLeft">Building user-first, scalable software for the modern web, windows form and mobile app.</p>
           <a href={`${process.env.PUBLIC_URL}/FerdinandRoxas.pdf`} download>
-            <button className="top-button animate__animated animate__fadeIn">Download Resume</button>
+            <button className="top-button animate__animated animate__fadeIn">Download CV</button>
           </a>
           <nav className="sidebar-nav animate__animated animate__fadeIn">
             <ul>
