@@ -1,4 +1,9 @@
-About Me
+Ferdinand Roxas
+Software Developer
+
+Building user-first, scalable software for the modern web, windows form and mobile app.
+
+ABOUT ME
 Hi, I'm a Software developer passionate about committed to crafting clean, efficient code that drives innovation. With a curious mind and a love for problem solving, I thrive on the challenges that programming presents.
 
 My journey in software development has been fueled by a desire to create impactful solutions that enhance user experiences and streamline processes. I believe in the power of collaboration and continuous learning, always seeking to expand my skills and knowledge.
@@ -6,3 +11,124 @@ My journey in software development has been fueled by a desire to create impactf
 Currently, I'm a Mid Fullstack developer at Octal Philippines, specializing in Frontend and backend development. I contribute to the creation and and maintenance of the applications to ensure they are user-friendly, efficient, and scalable.
 
 Asside from my professional work, I am also working as a freelance developer, where I take on various projects that allow me to explore new technologies and methodologies. This side work not only enhances my technical skills but also provides me with a broader perspective on the software development landscape.
+
+EXPERIENCE
+FULL TIME
+
+Oct 2023 — Present 1yr 10 mos
+Octal Philippines Incorporated
+Software Developer
+Diagnosed and resolved technical issues by analyzing and optimizing existing applications, systems, and databases, including Oracle Database and MSSQL, to ensure peak performance and reliability.
+Designed, developed, and deployed scalable web applications using ASP.NET Core, ASP.NET MVC, and C#, with a focus on cloud-based solutions.
+Developed and maintained desktop applications using the .NET Framework, delivering robust and user-friendly solutions.
+Collaborated with cross-functional teams to propose and implement innovative technical ideas, driving efficiency and resolving complex system challenges.
+
+Programming Language
+.NET Framework
+ASP.NET MVC / Core
+C#
+Oracle Database
+MSSQL
+Desktop App
+
+Jun 2022 — Oct 2023 1 yr 5 mos
+Symon Systems And Allied Services Inc.
+Software Developer
+Collaborated with application system, and database owners to diagnose issues, identify root causes, and implement effective solutions, ensuring system stability and performance.
+Proposed and communicated innovative technical ideas to the team, contributing to the resolution of complex issues and improving overall system efficiency.
+Developed and implemented both temporary workarounds and permanent fixes to address critical system challenges, minimizing downtime and enhancing user experience.
+Designed, developed, and deployed system applications using ASP.NET Core, ASP.NET MVC, C#, HTML, jQuery, and AJAX, ensuring seamless functionality and scalability.
+Built and maintained desktop applications using the .NET Framework, delivering robust and user-friendly solutions tailored to business needs.
+
+Programming Language
+ASP.NET MVC
+ASP.NET Core
+C#
+HTML / CSS / JQUERY
+C# Win Form
+
+Sep 2019 — Jun 2022 2 yrs 10 mos
+CONDUENT - Data Processing
+Data Entry
+Processing Data based on Outsourcing Clients Need
+
+Encoding
+
+FREELANCE
+
+Jan 2025 - June 2025 6 mos
+PPSTA
+Software Developer
+Full stack developer of the new implemented system.
+Designed and developed, system applications using Cake PHP, delivering reliable and scalable solutions.
+Redesign UI of web applications delivering reliable and scalable solutions.
+
+Programming Language
+Cake PHP
+MySQL
+Github
+
+Nov 2022 - Feb 2023 4 mos
+TeQnovation PEC Inc.
+Software Developer
+Analyzed and resolved issues by engaging with applications, systems, and databases, utilizing SQL and Microsoft SQL Server to diagnose problems and implement effective fixes.
+Proposed and communicated innovative technical ideas to the team, contributing to the development of solutions that addressed complex system challenges.
+Developed and implemented both temporary workarounds and permanent fixes, ensuring minimal disruption and improved system performance.
+Designed, developed, and deployed system applications using C# and Visual Basic .NET (VB.NET), delivering reliable and scalable solutions.
+
+Programming Language
+C#
+MSSQL
+Visual Basic .Net
+
+
+PROJECTS
+WEB APPLICATIONS
+
+Bubbly Laundry Stop ↗
+Web app for streamlining laundry shop operations. Includes role-based access, order management, and real-time status tracking with a modern Laravel-PHP stack.
+
+Programming Language
+Laravel - PHP -MySQL - Bootstrap
+
+Library Management System ↗
+A modern library management system built using ASP.NET and C#, designed to handle book inventory, member registrations, lending/return transactions, and overdue tracking.
+
+Programming Language
+C# - ASP.NET - MSSQL - Bootstrap
+
+Childhood And Information System ↗
+ECCD Information System is a web-based application developed using ASP.NET and C#, designed to streamline the management of Early Childhood Care and Development (ECCD) data.
+
+Programming Language
+C# - ASP.NET - MSSQL - Bootstrap
+
+Inventory Management System ↗
+Inventory Management System is a web application built with ASP.NET, C#, and MSSQL that enables businesses to track products, manage stock levels, and generate reports. It features role-based access, intuitive dashboards, and real-time inventory updates for efficient warehouse and item control.
+
+Programming Language
+C# - ASP.NET - MSSQL - Bootstrap
+
+HRMO Profiling ↗
+Mini HRMO Profiling System is a Laravel-based web app designed to manage employee records efficiently. It features profile creation, PDF document uploads, and user-friendly interfaces tailored for HR departments to streamline personnel management and documentation.
+
+Programming Language
+PHP - Laravel - MySQL - Bootstrap
+
+MOBILE APPLICATION
+
+Garney App - Garbage Tracker System ↗
+A modern mobile application built with .NET MAUI and .NET Core API, designed to streamline waste collection and tracking. Garney enables users to register, log in, schedule pickups, track garbage trucks in real-time, and participate in recycling programs. With a clean UI and efficient backend integration, it promotes smarter, more sustainable waste management.
+
+Programming Language
+MAUI - .NET Core Api - MySQL
+
+UI/UX DESIGN
+
+FIGMA
+
+Garney App - Garbage Tracker System (UI/UX Design) ↗
+A clean and user-friendly mobile interface designed for efficient garbage management. Users can easily sign in, upload photos of waste, and track garbage locations in real time. The UI emphasizes intuitive navigation, modern visuals, and accessibility—supporting smoother collaboration between citizens and waste services.
+
+ZendTask - Task Management App (UI/UX Design) ↗
+ZendTask is a clean, intuitive task management app designed with user-centered principles in mind. Built in Figma, the interface emphasizes clarity, ease of navigation, and modern aesthetics. From task creation to real-time updates and progress tracking, every element was crafted to enhance user experience and productivity across mobile and desktop views.
