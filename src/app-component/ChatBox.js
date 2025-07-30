@@ -11,16 +11,35 @@ export function ChatBox() {
 
     const toggleChat = () => setIsOpen(!isOpen);
 
-    const sendMessage = () => {
-        if(input.trim() === "") return;
-        setMessages([...messages, { text: input, sender: "user" }]);
+    const sendMessage = async () => {
+        if (input.trim() === "") return;
+
+        const userMessage = input;
+        setMessages([...messages, { text: userMessage, sender: "user" }]);
         setInput("");
+
+        try {
+            const sessionId = "12345"; // You can make this dynamic if needed
+
+            const response = await fetch(
+                `https://frinfodev.app.n8n.cloud/webhook/febe46c3-2670-42d2-8d7a-6a6a5a2c7812?question=${encodeURIComponent(userMessage)}&sessionId=12345`
+            );
+
+            const data = await response.json();
+            const aiReply = data.response || "Sorry, I couldn't understand that.";
+
+            setMessages(prev => [...prev, { text: aiReply, sender: "bot" }]);
+
+        } catch (error) {
+            console.error("Error:", error);
+            setMessages(prev => [...prev, { text: "Something went wrong.", sender: "bot" }]);
+        }
     };
 
     return (
         <div className="chat-container">
             {isOpen && (
-                <div children = "chat-box">
+                <div className = "chat-box">
                     <div className="chat-header">
                         <h4>Customer Service</h4>
                         <button onClick={toggleChat}>X</button>

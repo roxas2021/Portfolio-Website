@@ -1,5 +1,4 @@
 .chat-container {
-    display: none;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -20,7 +19,6 @@
 .chat-box {
   width: 300px;
   padding: 1rem;
-  background: #ccd6f6;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
@@ -51,12 +49,22 @@
   overflow-y: auto;
   background-color: #0f203a;
   color: #ccd6f6;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   box-shadow: 0 3px 9px rgba(252, 253, 255, 0.377);
+    display: flex;
+    flex-direction: column;
 }
 
 .chat-message.user {
-  text-align: right;
+  display: inline-block;
+  max-width: 80%;
+  background-color: #ccd6f6;
+  color: #1e293b;
+  padding: 0.4rem 0.6rem;
+  border-radius: 10px;
+  margin-bottom: 0.3rem;
+  align-self: flex-end;
+  word-wrap: break-word;
 }
 
 .chat-input-container {
