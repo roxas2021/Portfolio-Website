@@ -1,0 +1,8 @@
+About Me
+Hi, I'm a Software developer passionate about committed to crafting clean, efficient code that drives innovation. With a curious mind and a love for problem solving, I thrive on the challenges that programming presents.
+
+My journey in software development has been fueled by a desire to create impactful solutions that enhance user experiences and streamline processes. I believe in the power of collaboration and continuous learning, always seeking to expand my skills and knowledge.
+
+Currently, I'm a Mid Fullstack developer at Octal Philippines, specializing in Frontend and backend development. I contribute to the creation and and maintenance of the applications to ensure they are user-friendly, efficient, and scalable.
+
+Asside from my professional work, I am also working as a freelance developer, where I take on various projects that allow me to explore new technologies and methodologies. This side work not only enhances my technical skills but also provides me with a broader perspective on the software development landscape.
