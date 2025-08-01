@@ -241,7 +241,7 @@ export default function App() {
 
               {activeTab === "freelance" && (
                 <>
-                  <div className="job-entry animate-on-scroll"
+                  {/* <div className="job-entry animate-on-scroll"
                     style={{ animationDuration: "1.8s" }}>
                     <div className="job-meta">
                       <span className="job-date">Jan 2025 - June 2025 6 mos</span>
@@ -258,7 +258,7 @@ export default function App() {
                     <div className="tech-tags">
                       <span>Cake PHP</span><span>MySQL</span><span>Github</span>
                     </div>
-                </div>
+                </div> */}
 
                   <div
                     className={`job-entry animate-on-scroll ${!expandedEntries[2] ? "collapsed" : ""}`}
