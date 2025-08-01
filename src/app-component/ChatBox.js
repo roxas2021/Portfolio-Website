@@ -19,7 +19,7 @@ export function ChatBox() {
         setInput("");
 
         try {
-            const sessionId = "12345"; // You can make this dynamic if needed
+            const sessionId = "123456"; // You can make this dynamic if needed
 
             const response = await fetch(
                 `https://frinfodev.app.n8n.cloud/webhook/febe46c3-2670-42d2-8d7a-6a6a5a2c7812?question=${encodeURIComponent(userMessage)}&sessionId=12345`
